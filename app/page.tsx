@@ -2,18 +2,17 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex bg-zinc-400 min-h-screen flex-col justify-center content-center">
       <div
-        className="py-11 px-11 w-full max-w-fit mx-auto 
-        bg-white rounded-xl shadow-lg space-y-2 item 
-        sm:items-center sm:space-y-2 sm:space-x-6"
+        className="flex flex-col py-10 px-10 mx-auto bg-white 
+        rounded-xl shadow-lg space-y-2 md:w-3/12 sm:w-2/12 sm:items-center sm:space-y-8"
       >
         <Image
           src="/dispaly_profile.jpeg"
           alt="Keo Pic"
-          className="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
-          width={200}
-          height={200}
+          className="block mx-auto w-44 h-44 rounded-full sm:mx-0 sm:shrink-0"
+          width={900}
+          height={900}
           priority
         />
         <div className="text-center space-y-2 sm:text-center">
