@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col justify-center content-center bg-gradient-to-r from-indigo-400 to-zinc-600">
       <div
         className="flex flex-col py-10 px-10 mx-auto bg-white 
-        rounded-xl shadow-lg space-y-2 md:w-3/12 sm:w-2/12 sm:items-center sm:space-y-8"
+        rounded-xl shadow-lg space-y-4 sm:w-2/12 sm:items-center"
       >
         <Image
           src="/dispaly_profile.jpeg"
