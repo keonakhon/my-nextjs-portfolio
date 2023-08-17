@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-center content-center bg-gradient-to-r from-indigo-400 to-zinc-600">
+    <main className="flex min-h-screen flex-col justify-center content-center bg-gradient-to-r from-indigo-400 to-gray-800">
       <div
         className="flex flex-col py-10 px-10 mx-auto bg-white 
         rounded-xl shadow-lg space-y-4 sm:w-2/12 sm:items-center"
