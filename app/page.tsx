@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import page from "./styles/page.module.css";
 
 export default function Home() {
   return (
@@ -25,7 +28,6 @@ export default function Home() {
               <p className="text-slate-500 font-medium">Software Developer</p>
             </div>
             <div className="flex flex-row">
-              {/* #0B65C2 */}
               <Link
                 href="https://linkedin.com/in/keonakhon/"
                 rel="noopener noreferrer"
@@ -35,13 +37,9 @@ export default function Home() {
                 hover:text-white hover:bg-[#0175b2] hover:border-transparent 
                 focus:outline-none focus:ring-2 focus:ring-[#0175b2] focus:ring-offset-2"
               >
-                <Image
-                  src="/linkedin.svg"
-                  alt="LinkedIn Logo"
-                  className="brightness-100 md:filter-none invert"
-                  width={20}
-                  height={20}
-                  priority
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className={page.linkedinIcon}
                 />
                 LinkedIn
               </Link>
@@ -54,13 +52,7 @@ export default function Home() {
                 hover:text-white hover:bg-gray-600 hover:border-transparent 
                 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2"
               >
-                <Image
-                  src="/github.svg"
-                  alt="GitHub Logo"
-                  width={20}
-                  height={20}
-                  priority
-                />
+                <FontAwesomeIcon icon={faGithub} className={page.githubIcon} />
                 GitHub
               </Link>
             </div>

@@ -1,0 +1,17 @@
+.linkedinIcon {
+  font-size: 1.3rem;
+  color: #0072b1;
+}
+
+.githubIcon {
+  font-size: 1.3rem;
+  color: #171515;
+}
+
+.linkedinIcon:hover {
+  color: #fff;
+}
+
+.githubIcon:hover {
+  color: #fff;
+}
