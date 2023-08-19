@@ -6,13 +6,13 @@ export default function Home() {
     <main>
       <div className="flex min-h-screen flex-col justify-center content-center bg-gradient-to-r from-gray-600 to-indigo-900">
         <div
-          className="flex flex-col py-10 px-10 mx-auto bg-white 
-        rounded-xl shadow-lg space-y-4 sm:w-2/12 sm:items-center"
+          className="flex flex-col mx-auto bg-white py-10 items-center
+        rounded-xl shadow-lg space-y-4 lg:w-3/12 sm:w-5/12"
         >
           <Image
             src="/dispaly_profile.jpeg"
             alt="Keo Pic"
-            className="block mx-auto w-48 h-48 rounded-full sm:mx-0 sm:shrink-0"
+            className="object-cover mx-auto w-48 h-48 rounded-full sm:mx-0 sm:shrink-0"
             width={800}
             height={800}
             priority
