@@ -32,14 +32,14 @@ export default function Home() {
                 href="https://linkedin.com/in/keonakhon/"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="flex justify-center gap-1.5 px-1.5 py-2 w-28 mx-1.5 text-sm 
+                className={`${page["button-linkedin"]} flex justify-center gap-1.5 px-1.5 py-2 w-28 mx-1.5 text-sm 
                 text-[#0175b2] font-semibold rounded-full border border-blue-200 
                 hover:text-white hover:bg-[#0175b2] hover:border-transparent 
-                focus:outline-none focus:ring-2 focus:ring-[#0175b2] focus:ring-offset-2"
+                focus:outline-none focus:ring-2 focus:ring-[#0175b2] focus:ring-offset-2`}
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className={page.linkedinIcon}
+                  className={`${page["linkedin-icon"]} ${page["brand-icon-size"]}`}
                 />
                 LinkedIn
               </Link>
@@ -47,12 +47,15 @@ export default function Home() {
                 href="https://github.com/keonakhon"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="flex justify-center gap-1.5 px-1.5 py-2 w-28 mx-1.5 text-sm 
+                className={`${page["button-github"]} flex justify-center gap-1.5 px-1.5 py-2 w-28 mx-1.5 text-sm 
                 text-gray-600 font-semibold rounded-full border border-gray-200 
                 hover:text-white hover:bg-gray-600 hover:border-transparent 
-                focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2"
+                focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2`}
               >
-                <FontAwesomeIcon icon={faGithub} className={page.githubIcon} />
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className={`${page["github-icon"]} ${page["brand-icon-size"]}`}
+                />
                 GitHub
               </Link>
             </div>

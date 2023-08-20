@@ -1,17 +1,11 @@
-.linkedinIcon {
+.button-linkedin:hover .linkedin-icon {
+  fill: #fff;
+}
+
+.button-github:hover .github-icon {
+  fill: #fff;
+}
+
+.brand-icon-size {
   font-size: 1.3rem;
-  color: #0072b1;
-}
-
-.githubIcon {
-  font-size: 1.3rem;
-  color: #171515;
-}
-
-.linkedinIcon:hover {
-  color: #fff;
-}
-
-.githubIcon:hover {
-  color: #fff;
 }
