@@ -7,13 +7,16 @@ import page from "./styles/page.module.css";
 export default function Home() {
   return (
     <main>
-      <div className="flex min-h-screen flex-col justify-center content-center bg-gradient-to-r from-gray-600 to-indigo-900">
+      <div
+        className="flex min-h-screen flex-col justify-center content-center
+      bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-green-100 via-sky-400 to-rose-700"
+      >
         <div
           className="flex flex-col mx-auto bg-white py-10 items-center
         rounded-xl shadow-lg space-y-4 lg:w-3/12 sm:w-5/12"
         >
           <Image
-            src="/dispaly_profile.jpeg"
+            src="/images/display_profile.jpeg"
             alt="Keo Pic"
             className="object-cover mx-auto w-48 h-48 rounded-full sm:mx-0 sm:shrink-0"
             width={800}
