@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
+import CookieConsent from "@/components/CookieConsent";
+
 import page from "./styles/page.module.css";
 
 export default function Home() {
@@ -65,6 +69,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <CookieConsent />
     </main>
   );
 }
