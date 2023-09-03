@@ -1,15 +1,22 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const CookieConsent = () => {
-  let cookieAllowed = localStorage.getItem("cookie-consent") || "true";
-  let cookieAllowedType = cookieAllowed === "true";
+  const [showCookieConsent, setShowCookieConsent] = useState(false);
 
-  const [showCookieConsent, setShowCookieConsent] = useState(cookieAllowedType);
+  useEffect(() => {
+    const isClient = !!window;
+    if (isClient) {
+      const cookieAllowed =
+        localStorage.getItem("display-cookie-consent") || "true";
+      const cookieAllowedType = cookieAllowed === "true";
+      setShowCookieConsent(cookieAllowedType);
+    }
+  }, []);
 
   const toggleButtonCookie = () => {
-    localStorage.setItem("cookie-consent", false);
+    localStorage.setItem("display-cookie-consent", false);
     setShowCookieConsent(false);
   };
 
