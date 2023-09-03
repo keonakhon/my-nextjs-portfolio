@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,8 +11,6 @@ import {
 import CookieConsent from "@/components/CookieConsent";
 
 import page from "./styles/page.module.css";
-
-// Test pr for vercel
 
 export default function Home() {
   return (
