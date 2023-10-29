@@ -37,9 +37,13 @@ const MyBlog = () => {
   }, []);
 
   return (
-    <section className="flex flex-row min-h-screen items-center">
+    <section
+      className="flex flex-col lg:flex-row min-h-screen 
+      space-y-16 lg:space-y-0 lg:space-x-28
+      justify-center items-center"
+    >
       <Card
-        className="flex flex-col mx-auto pb-4 w-10/12 bg-white opacity-70
+        className="flex flex-col pb-4 w-10/12 bg-white opacity-70
         rounded-xl shadow-lg space-y-4 lg:w-3/12 md:w-6/12 p-6"
       >
         <CardHeader>
@@ -56,7 +60,7 @@ const MyBlog = () => {
               article.map((ar, i) => (
                 <Box>
                   <Link
-                    className="text-gray-800 text-sm text-ellipsis h-11"
+                    className="text-gray-700 hover:text-gray-950 text-sm text-ellipsis h-11"
                     href={ar.url}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -70,7 +74,7 @@ const MyBlog = () => {
         </CardBody>
       </Card>
       <Card
-        className="flex flex-col mx-auto text-gray-900 items-center
+        className="flex flex-col text-gray-900
         space-y-4 rounded-xl shadow-lg p-6"
       >
         <CardHeader className="bg-inherit opacity-70">
