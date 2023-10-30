@@ -57,8 +57,8 @@ const MyBlog = () => {
         <CardBody className="h-40 overflow-auto">
           <Stack divider={<StackDivider />} spacing="4">
             {article &&
-              article.map((ar, i) => (
-                <Box>
+              article.map((ar) => (
+                <Box key={ar.id}>
                   <Link
                     className="text-gray-700 hover:text-gray-950 text-sm text-ellipsis h-11"
                     href={ar.url}
