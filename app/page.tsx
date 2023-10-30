@@ -36,7 +36,10 @@ export default function Home() {
               <p className="text-lg text-black font-semibold">
                 Keonakhon Kawan
               </p>
-              <p className="text-slate-500 font-medium">Software Developer</p>
+              <p className="text-slate-500 font-medium">
+                Software Developer with 6 years of experince in Software
+                Development
+              </p>
             </div>
           </div>
           <div className="flex justify-end gap-1.5 m-4">
