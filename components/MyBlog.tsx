@@ -13,8 +13,15 @@ import {
   StackDivider
 } from "@chakra-ui/react";
 
+type Article = {
+  id: string;
+  url: string;
+  title: string;
+  published_timestamp: string;
+};
+
 const MyBlog = () => {
-  const [article, setArticle] = useState([]);
+  const [articles, setArticle] = useState<Article[]>([]);
 
   // Iframe URL
   let fbURL = "https://www.facebook.com/";
@@ -26,14 +33,17 @@ const MyBlog = () => {
   let fullIframeURL =
     fbURL + fbIframePath + internalFbURL + fbPostURL + iframeSize;
 
-  useEffect(async () => {
+  useEffect(() => {
     // article list from dev.to
-    const username = "keonakhon";
-    const articleList = await fetch(
-      `https://dev.to/api/articles?username=${username}`
-    );
-    const articleListData = await articleList.json();
-    setArticle(articleListData);
+    async () => {
+      const username = "keonakhon";
+      const articleList = await fetch(
+        `https://dev.to/api/articles?username=${username}`
+      );
+      const articleListData = await articleList.json();
+
+      setArticle(articleListData);
+    };
   }, []);
 
   return (
@@ -56,8 +66,8 @@ const MyBlog = () => {
         </CardHeader>
         <CardBody className="h-40 overflow-auto">
           <Stack divider={<StackDivider />} spacing="4">
-            {article &&
-              article.map((ar) => (
+            {articles &&
+              articles.map((ar, i) => (
                 <Box key={ar.id}>
                   <Link
                     className="text-gray-700 hover:text-gray-950 text-sm text-ellipsis h-11"
