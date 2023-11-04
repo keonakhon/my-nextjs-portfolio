@@ -35,7 +35,7 @@ const MyBlog = () => {
 
   useEffect(() => {
     // article list from dev.to
-    async () => {
+    (async () => {
       const username = "keonakhon";
       const articleList = await fetch(
         `https://dev.to/api/articles?username=${username}`
@@ -43,7 +43,7 @@ const MyBlog = () => {
       const articleListData = await articleList.json();
 
       setArticle(articleListData);
-    };
+    })();
   }, []);
 
   return (
