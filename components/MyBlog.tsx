@@ -48,61 +48,69 @@ const MyBlog = () => {
 
   return (
     <section
-      className="flex flex-col lg:flex-row min-h-screen 
-      space-y-16 lg:space-y-0 lg:space-x-28
+      className="flex flex-col max-h-screen my-10
       justify-center items-center"
     >
-      <Card
-        className="flex flex-col pb-4 w-10/12 bg-white opacity-70
-        rounded-xl shadow-lg space-y-4 lg:w-3/12 md:w-6/12 p-6"
+      <div
+        className="flex flex-col lg:flex-row w-10/12 md:w-6/12 bg-inherit
+        rounded-xl shadow-lg overflow-hidden opacity-80"
       >
-        <CardHeader>
-          <Heading
-            className="text-gray-900 text-center text-base font-medium"
-            size="md"
-          >
-            My Articles on dev.to
-          </Heading>
-        </CardHeader>
-        <CardBody className="h-40 overflow-auto">
-          <Stack divider={<StackDivider />} spacing="4">
-            {articles &&
-              articles.map((ar, i) => (
-                <Box key={ar.id}>
-                  <Link
-                    className="text-gray-700 hover:text-gray-950 text-sm text-ellipsis h-11"
-                    href={ar.url}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {ar.title} (
-                    {dayjs(ar.published_timestamp).format("YYYY-MM-DD")})
-                  </Link>
-                </Box>
-              ))}
-          </Stack>
-        </CardBody>
-      </Card>
-      <Card
-        className="flex flex-col text-gray-900
-        space-y-4 rounded-xl shadow-lg p-6"
-      >
-        <CardHeader className="bg-inherit opacity-70">
-          <p className="text-base font-medium">
-            My article was shared by dev.to social media
-          </p>
-        </CardHeader>
-        <CardBody>
-          <iframe
-            src={fullIframeURL}
-            width="350"
-            height="448"
-            className="opacity-60"
-            style={{ border: "none", overflow: "hidden", borderRadius: 20 }}
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
-        </CardBody>
-      </Card>
+        <Card
+          className="flex flex-col bg-white
+          space-y-4 lg:w-6/12 md:w-6/12 p-3 shadow-lg"
+        >
+          <CardHeader>
+            <Heading
+              className="text-gray-900 text-center text-base font-medium"
+              size="md"
+            >
+              My articles on dev.to
+            </Heading>
+          </CardHeader>
+          <CardBody className="h-40 lg:h-min overflow-auto">
+            <Stack divider={<StackDivider />} spacing="4">
+              {articles &&
+                articles.map((ar, i) => (
+                  <Box key={ar.id}>
+                    <Link
+                      className="text-gray-700 hover:text-gray-600 hover:font-bold
+                      text-sm text-ellipsis h-11"
+                      href={ar.url}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      {ar.title} (
+                      {dayjs(ar.published_timestamp).format("YYYY-MM-DD")})
+                    </Link>
+                  </Box>
+                ))}
+            </Stack>
+          </CardBody>
+        </Card>
+        <Card
+          className="flex flex-col text-gray-900 bg-white items-center
+          space-y-0 lg:w-6/12 md:w-6/12 p-0 md:p-3 shadow-lg"
+        >
+          <CardHeader>
+            <Heading
+              className="text-gray-900 text-center text-base font-medium"
+              size="md"
+            >
+              My article was shared by dev.to and recieved over 700 reactions
+            </Heading>
+          </CardHeader>
+          <CardBody>
+            <iframe
+              src={fullIframeURL}
+              width="350"
+              height="448"
+              className="opacity-80"
+              style={{ border: "none", overflow: "hidden", borderRadius: 20 }}
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
+          </CardBody>
+        </Card>
+      </div>
     </section>
   );
 };
