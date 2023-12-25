@@ -38,7 +38,8 @@ export default function Home() {
                 Keonakhon Kawan
               </p>
               <p className="text-slate-500 font-medium">
-                A Software Developer for 5 years
+                Software Developer with 5 years' experince, passionate about
+                innovation and efficiency.
               </p>
             </div>
           </div>
