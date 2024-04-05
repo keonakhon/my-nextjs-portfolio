@@ -38,8 +38,8 @@ export default function Home() {
                 Keonakhon Kawan
               </p>
               <p className="text-slate-500 font-medium">
-                Software Developer with 5 years' experince, passionate about
-                innovation and efficiency.
+                Software Developer with 5 years&apos; experince, passionate
+                about innovation and efficiency.
               </p>
             </div>
           </div>

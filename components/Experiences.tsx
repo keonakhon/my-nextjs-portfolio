@@ -43,7 +43,7 @@ const Experiences = () => {
           </ul>
 
           <Text className="text-gray-900 text-base font-medium flex items-center">
-            Some of the feature I've developed for Malware Detection using
+            Some of the feature I&apos;ve developed for Malware Detection using
             Python:
           </Text>
           <Text className="text-gray-900 text-base mt-3 font-medium flex items-center">
@@ -70,8 +70,8 @@ const Experiences = () => {
             priority
           />
           <Text className="text-gray-900 text-base mt-3 font-medium flex items-center">
-            It's one of the project that brought the fund for 30 Million THB in
-            Shark Tank Thailand
+            It&apos;s one of the project that brought the fund for 30 Million
+            THB in Shark Tank Thailand
           </Text>
           <div className="flex justify-center items-center">
             <iframe
