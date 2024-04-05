@@ -16,7 +16,7 @@ import page from "./styles/page.module.css";
 
 export default function Home() {
   return (
-    <main className="bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-gray-600 via-sky-600 to-white">
+    <main className="bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-slate-700 via-sky-600 to-slate-500">
       <section className="flex flex-row min-h-screen items-center">
         <div
           className="flex flex-col mx-auto bg-white pb-4 w-10/12 opacity-80
