@@ -16,7 +16,7 @@ const CookieConsent = () => {
   }, []);
 
   const toggleButtonCookie = () => {
-    localStorage.setItem("display-cookie-consent", false);
+    localStorage.setItem("display-cookie-consent", "false");
     setShowCookieConsent(false);
   };
 

@@ -10,16 +10,17 @@ import {
 
 import CookieConsent from "@/components/CookieConsent";
 import MyBlog from "@/components/MyBlog";
+import Experiences from "@/components/Experiences";
 
 import page from "./styles/page.module.css";
 
 export default function Home() {
   return (
-    <main className="bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-green-100 via-sky-400 to-rose-700">
+    <main className="bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-gray-600 via-sky-600 to-white">
       <section className="flex flex-row min-h-screen items-center">
         <div
-          className="flex flex-col mx-auto bg-white pb-4 w-10/12
-        rounded-xl shadow-lg space-y-4 lg:w-3/12 md:w-6/12"
+          className="flex flex-col mx-auto bg-white pb-4 w-10/12 opacity-80
+          rounded-xl shadow-lg space-y-4 lg:w-3/12 md:w-6/12"
         >
           <div className="flex mt-10 justify-center">
             <Image
@@ -37,8 +38,8 @@ export default function Home() {
                 Keonakhon Kawan
               </p>
               <p className="text-slate-500 font-medium">
-                Software Developer with 6 years of experince in Software
-                Development
+                Software Developer with 5 years&apos; experince, passionate
+                about innovation and efficiency.
               </p>
             </div>
           </div>
@@ -80,6 +81,7 @@ export default function Home() {
         </div>
       </section>
       <MyBlog />
+      <Experiences />
       <CookieConsent />
     </main>
   );
