@@ -88,7 +88,7 @@ const MyBlog = () => {
           </CardBody>
         </Card>
         <Card
-          className="flex flex-col text-gray-900 bg-white items-center
+          className="flex flex-col text-gray-900 bg-gray-200 items-center
           space-y-0 lg:w-6/12 md:w-6/12 p-0 md:p-3 shadow-lg"
         >
           <CardHeader>
