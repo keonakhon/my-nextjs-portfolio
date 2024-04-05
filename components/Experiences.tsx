@@ -32,7 +32,7 @@ const Experiences = () => {
             2023 - Present: at Magic Tech Solution in Thailand (Remote)
           </Heading>
         </CardHeader>
-        <CardBody className="mt-12 lg:ml-5">
+        <CardBody className="mt-12 lg:ml-4">
           <ul
             className="list-disc text-gray-900 text-base font-medium 
           flex items-center underline underline-offset-2"
@@ -44,7 +44,7 @@ const Experiences = () => {
             TypeScript in a Monorepo Project using Lerna
           </Text>
         </CardBody>
-        <CardBody className="mt-12 lg:ml-5">
+        <CardBody className="mt-12 lg:ml-4">
           <ul
             className="list-disc text-gray-900 text-base font-medium
           flex items-center underline underline-offset-2"
