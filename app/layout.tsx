@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import "./globals.css";
+import "./styles/experince.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
