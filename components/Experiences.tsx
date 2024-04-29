@@ -13,6 +13,13 @@ import {
   Text,
   Center
 } from "@chakra-ui/react";
+import { EmblaOptionsType } from "embla-carousel";
+
+import EmblaCarousel from "./carousel/EmblaCarousel";
+
+const OPTIONS: EmblaOptionsType = { loop: true };
+const SLIDE_COUNT = 5;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 const Experiences = () => {
   return (
@@ -21,8 +28,8 @@ const Experiences = () => {
       space-y-16 lg:space-y-0 justify-center items-center"
     >
       <Card
-        className="flex flex-col pb-4 w-10/12 bg-white opacity-80
-        rounded-xl shadow-lg space-y-4 lg:w-6/12 md:w-6/12 p-6"
+        className="flex flex-col pb-4 w-10/12 bg-slate-100
+        rounded-xl shadow-2xl shadow-slate-500 space-y-4 lg:w-6/12 md:w-6/12 p-6"
       >
         <CardHeader>
           <Heading
@@ -83,7 +90,7 @@ const Experiences = () => {
       </Card>
       <div className="h-20 border-l border-gray-400" />
       <Card
-        className="flex flex-col pb-4 w-10/12 bg-white opacity-80
+        className="flex flex-col pb-4 w-10/12 bg-slate-100
         rounded-xl shadow-lg space-y-4 lg:w-6/12 md:w-6/12 p-6 items-center"
       >
         <CardHeader>
@@ -97,7 +104,7 @@ const Experiences = () => {
       </Card>
       <div className="h-20 border-l border-gray-400" />
       <Card
-        className="flex flex-col pb-4 w-10/12 bg-white opacity-80
+        className="flex flex-col pb-4 w-10/12 bg-slate-100
         rounded-xl shadow-lg space-y-4 lg:w-6/12 md:w-6/12 p-6 items-center"
       >
         <CardHeader>
@@ -116,7 +123,7 @@ const Experiences = () => {
       </Card>
       <div className="h-20 border-l border-gray-400" />
       <Card
-        className="flex flex-col pb-4 w-10/12 bg-white opacity-80
+        className="flex flex-col pb-4 w-10/12 bg-slate-100
         rounded-xl shadow-lg space-y-4 lg:w-6/12 md:w-6/12 p-6 items-center"
       >
         <CardHeader>
@@ -127,10 +134,13 @@ const Experiences = () => {
             Nov 2018 - May 2021: GOTEDDY (On-site)
           </Heading>
         </CardHeader>
+        <CardBody className="mt-8">
+          <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+        </CardBody>
       </Card>
       <div className="h-20 border-l border-gray-400" />
       <Card
-        className="flex flex-col pb-4 w-10/12 bg-white opacity-80
+        className="flex flex-col pb-4 w-10/12 bg-slate-100
         rounded-xl shadow-lg space-y-4 lg:w-6/12 md:w-6/12 p-6 items-center"
       >
         <CardHeader>
@@ -144,7 +154,7 @@ const Experiences = () => {
       </Card>
       <div className="h-20 border-l border-gray-400" />
       <Card
-        className="flex flex-col pb-4 w-10/12 bg-white opacity-80
+        className="flex flex-col pb-4 w-10/12 bg-slate-100
         rounded-xl shadow-lg space-y-4 lg:w-6/12 md:w-6/12 p-6 items-center"
       >
         <CardHeader>

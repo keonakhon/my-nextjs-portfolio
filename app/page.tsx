@@ -19,7 +19,7 @@ export default function Home() {
     <main className="bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-slate-700 via-sky-600 to-slate-500">
       <section className="flex flex-row min-h-screen items-center">
         <div
-          className="flex flex-col mx-auto bg-white pb-4 w-10/12 opacity-80
+          className="flex flex-col mx-auto bg-slate-100 pb-4 w-10/12
           rounded-xl shadow-lg space-y-4 lg:w-3/12 md:w-6/12"
         >
           <div className="flex mt-10 justify-center">

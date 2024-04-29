@@ -53,10 +53,10 @@ const MyBlog = () => {
     >
       <div
         className="flex flex-col lg:flex-row w-10/12 md:w-6/12 bg-inherit
-        rounded-xl shadow-lg overflow-hidden opacity-80"
+        rounded-xl shadow-lg overflow-hidden"
       >
         <Card
-          className="flex flex-col bg-white
+          className="flex flex-col bg-slate-100
           space-y-4 lg:w-6/12 md:w-6/12 p-3 shadow-lg"
         >
           <CardHeader>
